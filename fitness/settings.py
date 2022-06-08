@@ -103,7 +103,7 @@ DATABASES = {
         'NAME': 'fitnesdb',
         'USER': 'oleg',
         'PASSWORD': '1111',
-        'HOST': 'localhost',
+        'HOST': 'localhost', 'https://pridefitness.herokuapp.com/'
         'PORT': '5432',
     }
 }
