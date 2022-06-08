@@ -158,6 +158,4 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
-import fitness.settings
-fitness.settings.DATABASES = {. . ., 'PORT' : '5482', . . .}
 
