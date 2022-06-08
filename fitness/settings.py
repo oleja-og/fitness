@@ -100,7 +100,7 @@ WSGI_APPLICATION = 'fitness.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'fitnesdb',
+        'NAME': 'fitnessdb',
         'USER': 'oleg',
         'PASSWORD': '1111',
         'HOST': 'localhost',
