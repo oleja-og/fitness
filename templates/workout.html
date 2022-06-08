@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% block title %}<h1>Uлавная</h1>
+{% endblock %}
+
+
+{% block content %}
+    <div class="grid-post" >
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card mb-3 bg-dark">
+                        <img src="/static/img/images7.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">For Men</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <a href="{% url 'workout_male' %}" class="btn btn-warning">Read</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card mb-3 bg-dark">
+                        <img src="/static/img/images7.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">For Women</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <a href="{% url 'workout_woman' %}" class="btn btn-warning">Read</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer fixed-bottom">
+        <div class="container">
+            <div class="d-sm-flex justify-content-between">
+                <div class="footer-left">
+                    <a href="">Terms and conditions</a>
+                    <a href="">Privacy</a>
+                </div>
+                <div class="footer-right">
+                    <span>Follow</span>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+{% endblock %}

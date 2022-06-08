@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}<h1>Uлавная</h1>
+{% endblock %}
+
+
+{% block content %}
+    <div class="d-flex justify-content-center">
+        <h1>Equipment</h1><br>
+    </div>
+    <div class="text-center">
+        {% for trainer in trainers %}
+            <div class="container">
+                <div class="card mb-5 bg-dark text-white">
+                    <img src="{{ trainer.image.url }}" class="card-img" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ trainer.name }}</h5>
+                        <p class="card-text">{{ trainer.last_name|truncatewords:30|linebreaks }}</p>
+                        <a href="{% url 'trainers_detail' trainer.id %}" class="btn btn-warning">REad</a>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}

@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %}<h1>Uлавная</h1>
+{% endblock %}
+
+
+{% block content %}
+    <div class="d-flex justify-content-center">
+        <h1>Equipment</h1><br>
+    </div>
+    <div class="text-center">
+        {% for equip in equipment %}
+            <div class="container">
+                <div class="card mb-5 bg-dark text-white">
+                    <img src="{{ equip.image.url }}" class="card-img" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ equip.title }}</h5>
+                        <p class="card-text">{{ equip.about|truncatewords:30|linebreaks }}</p>
+                        <p class="date">
+                            Published {{ equip.created }} by {{ equip.author }}
+                        </p>
+                        <a href="{% url 'equipment_detail' equip.id %}" class="btn btn-warning">REad</a>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}

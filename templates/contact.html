@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}<h1>Uлавная</h1>
+{% endblock %}
+
+
+{% block content %}
+    <div class="text-center">
+        <div class="grid-post">
+            {% for r in contact %}
+                <h1>{{ r.title }}</h1>
+                 <h1>{{ r.name }}</h1>
+                    <h2>{{ r.city }}</h2>
+                <h2>{{ r.street}},{{ r.house }}</h2>
+                <h1>{{ r.phone }}</h1>
+                <h1>{{ r.email }}</h1>
+                <h1>{{ r.bank }}</h1>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

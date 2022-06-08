@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}<h1>Uлавная</h1>
+{% endblock %}
+
+
+{% block content %}
+    <div class="text-center">
+        <div class="grid-post">
+            {% for r in rules %}
+                <h1>{{ r.title }}</h1>
+                <div class="container">
+                    <h3>{{ r.rules }}</h3>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block title %}<h1>Uлавная</h1>
+{% endblock %}
+
+
+{% block content %}
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="single-post">
+                    <h3 class="post-category">{{ news.title }}</h3>
+                    <p class="date">
+                        Published {{ news.publish }} by {{ news.author }}
+                    </p>
+                    {{ news.body|linebreaks }}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% include "pagination.html" with page=posts %}
+
+   <footer class="footer fixed-bottom">
+        <div class="container">
+            <div class="d-sm-flex justify-content-between">
+                <div class="footer-left">
+                    <a href="">Terms and conditions</a>
+                    <a href="">Privacy</a>
+                </div>
+                <div class="footer-right">
+                    <span>Follow</span>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+{% endblock %}

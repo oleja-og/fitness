@@ -1,0 +1,144 @@
+{% extends 'base.html' %}
+
+{% block title %}<h1>Главная</h1>
+{% endblock %}
+
+{% block content %}
+
+    <div class="text-center">
+        <h1>SHEDULE</h1><br>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="single-post">
+                    <h2 class="post-title">{{ today }}</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti dicta eligendi incidunt iste
+                        nemo? Accusamus asperiores corporis, facere iusto modi nemo nesciunt! Commodi cum dignissimos nam
+                        nulla repellendus rerum suscipit.</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="table-responsive">
+        <table class="table table-dark table-bordered table-hover">
+            <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">{{ today }}</th>
+                <th scope="col">{{ next }}</th>
+                <th scope="col">{{ next }}</th>
+                <th scope="col">{{ next }}</th>
+                <th scope="col">{{ next }}</th>
+                <th scope="col">{{ next }}</th>
+                <th scope="col">{{ next }}</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row">10:00</th>
+                <td><a class="btn btn-warning" href="#" role="button"><p>TRX</p><p>Status</p><p>Количество:</p>Записаться</a></td>
+                <td>Thornton</td>
+                <td>@fat</td>
+                <td>@mdo</td>
+                <td>@mdo</td>
+                <td>@mdo</td>
+                <td>@mdo</td>
+            </tr>
+            <tr>
+                <th scope="row">11:00</th>
+                <td>Jacob</td>
+                <td><a class="btn btn-warning" href="#" role="button"><p>TRX</p><p>Status</p><p>Количество:</p>Записаться</a></td>
+                <td>@fat</td>
+                <td><a class="btn btn-warning" href="#" role="button"><p>TRX</p><p>Status</p><p>Количество:</p>Записаться</a></td>
+                <td><a class="btn btn-warning" href="#" role="button"><p>TRX</p><p>Status</p><p>Количество:</p>Записаться</a></td>
+                <td>@mdo</td>
+                <td>@mdo</td>
+            </tr>
+            <tr>
+                <th scope="row">12:00</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+                <td>@mdo</td>
+                <td>@mdo</td>
+                <td>@mdo</td>
+                <td><a class="btn btn-warning" href="#" role="button"><p>TRX</p><p>Status</p><p>Количество:</p>Записаться</a></td>
+            </tr>
+            <tr>
+                <th scope="row">13:00</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td><a class="btn btn-warning" href="#" role="button"><p>TRX</p><p>Status</p><p>Количество:</p>Записаться</a></td>
+                <td>@mdo</td>
+                <td>@mdo</td>
+                <td>@mdo</td>
+                <td>@mdo</td>
+            </tr>
+            <tr>
+                <th scope="row">17:00</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+                <td>@mdo</td>
+                <td>@mdo</td>
+                <td><a class="btn btn-warning" href="#" role="button"><p>TRX</p><p>Status</p><p>Количество:</p>Записаться</a></td>
+                <td>@mdo</td>
+            </tr>
+            <tr>
+                <th scope="row">18:00</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td><a class="btn btn-warning" href="#" role="button"><p>TRX</p><p>Status</p><p>Количество:</p>Записаться</a></td>
+                <td>@mdo</td>
+                <td>@mdo</td>
+                <td>@mdo</td>
+                <td>@mdo</td>
+            </tr>
+            <tr>
+                <th scope="row">19:00</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+                <td>@mdo</td>
+                <td>@mdo</td>
+                <td>@mdo</td>
+                <td><a class="btn btn-warning" href="#" role="button"><p>TRX</p><p>Status</p><p>Количество:</p>Записаться</a></td>
+            </tr>
+            <tr>
+                <th scope="row">20:00</th>
+                <td><a class="btn btn-warning" href="#" role="button"><p>TRX</p><p>Status</p><p>Количество:</p>Записаться</a></td>
+                <td>Thornton</td>
+                <td>@fat</td>
+                <td>@mdo</td>
+                <td>@mdo</td>
+                <td>@mdo</td>
+                <td>@mdo</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="d-sm-flex justify-content-between">
+                <div class="footer-left">
+                    <a href="">Terms and conditions</a>
+                    <a href="">Privacy</a>
+                </div>
+                <div class="footer-right">
+                    <span>Follow</span>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+{% endblock %}

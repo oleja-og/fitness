@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %}<h1>Uлавная</h1>
+{% endblock %}
+
+
+{% block content %}
+    {% if user.is_authenticated %}
+        <div class="container">
+            <div class="grid-post">
+                <div class="text-center">
+                    <h3>Вcе норм</h3>
+                </div>
+            </div>
+        </div>
+
+    {% else %}
+        <div class="container">
+            <div class="grid-post">
+                <div class="text-center">
+                    <div class="col-xs-offset-2 col-xs-10">
+                        <a class="btn btn-warning" href="{% url 'login' %}" role="button">Login</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endif %}
+{% endblock %}
