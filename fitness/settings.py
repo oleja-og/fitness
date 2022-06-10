@@ -29,7 +29,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'cg#p$g+j9tax!tax!#a3cup@1$8obt
 # SECURITY WARNING: don't run with debug turned on in production!
 
 DEBUG = bool(os.environ.get('DJANGO_DEBUG', True))
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['pridefitness.herokuapp.com', '127.0.0.1']
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
@@ -100,8 +100,8 @@ WSGI_APPLICATION = 'fitness.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'fitnessdb',
-        'USER': 'olej',
+        'NAME': 'fitnesdb',
+        'USER': 'oleg',
         'PASSWORD': '1111',
         'HOST': 'localhost',
         'PORT': "5432",
